@@ -7,7 +7,7 @@ namespace NEWRhythmsGonnaGetYou
     //   band - create class
     //   Albums for Bands - create class
     //   Song for Albums - create class
-    class Bands
+    class Band
     {
 
         public string Id { get; set; }
@@ -19,26 +19,6 @@ namespace NEWRhythmsGonnaGetYou
         public string IsSigned { get; set; }
         public string ContactName { get; set; }
         public string ContactPhoneNumber { get; set; }
-    };
-
-    class Albums
-
-    {
-        public string Id { get; set; }
-        public string Title { get; set; }
-        public string IsExplicit { get; set; }
-        public string ReleaseDate { get; set; }
-        public string BandId { get; set; }
-    };
-
-    class Songs
-
-    {
-        public string Id { get; set; }
-        public string TrackNumber { get; set; }
-        public string Title { get; set; }
-        public string Duration { get; set; }
-        public string AlbumId { get; set; }
     };
 
     class Program
