@@ -4,7 +4,6 @@ namespace NEWRhythmsGonnaGetYou
 {
 
     // Create:
-    //        Add:
     //   band - create class
     //   Albums for Bands - create class
     //   Song for Albums - create class
@@ -56,59 +55,13 @@ namespace NEWRhythmsGonnaGetYou
             Console.WriteLine();
         }
 
-        // 
-
-
-
-        // Read: View:
-        //            List of Bands
-        //            view band's albums
-        //            view all:
-        //               albums by release date
-        //               bands signed
-        //               bands not signed
-
-
-        // Update:
-        //       Resign a bands
-
-
-        // Delete:
-        //       Let band go
-
-
-        // * QUIT PROGRAM:
-
-
         static void Main(string[] args)
         {
             DisplayMessage("Welcome To Record Company Database");
 
 
-
             // Create:
             // Menu - Console.WriteLine()
-            // Add
-            // Add a new band
-            // Add an album for a band
-            // Add a song to an album
-
-            // Band Info
-            // View all the bands
-            // Prompt for a band name and view all their albums
-            // View all albums ordered by ReleaseDate
-            // View all bands that are signed
-            // View all bands that are not signed
-
-            // Delete/Remove Band
-            // Let a band go (update isSigned to false)
-
-
-
-            // Resign a band (update isSigned to true)
-
-            // Quit the program
-
 
             var chooseQuit = false;
 
@@ -116,62 +69,136 @@ namespace NEWRhythmsGonnaGetYou
             {
                 Console.WriteLine();
                 Console.WriteLine("Record Company Menu:");
-                Console.WriteLine("ADD");
-                Console.WriteLine("Band Information");
-                Console.WriteLine("Let A Band Go");
-                Console.WriteLine("Resign Band");
+                Console.WriteLine("ADD - Add New Band Information");
+                Console.WriteLine("INFORMATION - Band Information");
+                Console.WriteLine("LET GO - Let A Band Go");
+                Console.WriteLine("RESIGN - Resign Band");
                 Console.WriteLine("QUIT - Close Application");
                 Console.WriteLine();
                 Console.WriteLine("What would you like to see?");
                 var option = Console.ReadLine().ToUpper();
 
+                // Add
+                // Add a new band
+                // Add an album for a band
+                // Add a song to an album
+
                 if (option == "ADD")
                 {
+                    Console.WriteLine();
+                    Console.WriteLine("ADD A NEW BAND");
+                    Console.WriteLine("ADD ALBUM TO BAND");
+                    Console.WriteLine("ADD SONG TO ALBUM");
+                    Console.WriteLine("RETURN TO MENU");
+                    Console.WriteLine();
+                    Console.WriteLine("What would you like to see?");
+                    var option = Console.ReadLine().ToUpper();
 
-                }
-
-                if (option == "Band Information")
-                {
-
-                }
-
-                if (option == "Let A Band Go")
-                {
-
-                }
-
-                if (option == "Resign Band")
-                {
-
-
-                    if (option == "QUIT")
+                    if (option == "ADD NEW BAND")
                     {
-                        chooseQuit = true;
+
+                    }
+
+                    if (option == "ADD ALBUM TO BAND")
+                    {
+
+                    }
+                    if (option == "ADD SONG TO ALBUM")
+                    {
+
+                    }
+                    if (option == "RETURN TO MENU")
+                    {
+
+                    }
+
+                }
+                // Band Info
+                // View all the bands
+                // Prompt for a band name and view all their albums
+                // View all albums ordered by ReleaseDate
+                // View all bands that are signed
+                // View all bands that are not signed
+
+                if (option == "INFORMATION")
+                {
+                    Console.WriteLine();
+                    Console.WriteLine("VIEW BAND AND ALBUMS");
+                    Console.WriteLine("VIEW ALL ALBUMS");
+                    Console.WriteLine("VIEW SIGNED BANDS");
+                    Console.WriteLine("VIEW BANDS NOT SIGNED");
+                    Console.WriteLine("RETURN TO MENU");
+                    Console.WriteLine();
+                    Console.WriteLine("What would you like to see?");
+                    var option = Console.ReadLine().ToUpper();
+
+                    if (option == "VIEW BAND AND ALBUMS")
+                    {
+
+                    }
+
+                    if (option == "VIEW SIGNED BANDS")
+                    {
+
+                    }
+                    if (option == "VIEW BANDS NOT SIGNED")
+                    {
+
+                    }
+                    if (option == "RETURN TO MENU")
+                    {
+
                     }
                 }
 
+                // Delete/Remove Band
+                // Let a band go (update isSigned to false)
+                if (option == "LET GO")
+                {
+
+                }
 
 
+                // Resign a band (update isSigned to true)
 
+                if (option == "RESIGN")
+                {
+                }
 
+                // Quit the program
 
+                if (option == "QUIT")
+                {
+                    chooseQuit = true;
+                }
 
-
-
-
-
-
-
-
-
-
-
-
+                Console.WriteLine(option);
 
                 DisplayMessage("Thank you for stopping in!");
-
-
-
             }
+
         }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
+}
+}
