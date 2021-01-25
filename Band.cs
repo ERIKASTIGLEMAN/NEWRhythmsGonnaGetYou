@@ -12,6 +12,8 @@ namespace NEWRhythmsGonnaGetYou
         public string IsSigned { get; set; }
         public string ContactName { get; set; }
         public string ContactPhoneNumber { get; set; }
+        public List<Album> Albums { get; set; }
+        
     };
     
 }
