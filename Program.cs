@@ -40,136 +40,189 @@ class Program
         {
             Console.WriteLine();
             Console.WriteLine("Record Company Menu:");
-            Console.WriteLine("ADD - Add New Band Information");
-            Console.WriteLine("INFORMATION - Band Information");
-            Console.WriteLine("LET GO - Let A Band Go");
-            Console.WriteLine("RESIGN - Resign Band");
-            Console.WriteLine("QUIT - Close Application");
             Console.WriteLine();
-            Console.WriteLine("What would you like to see?");
-            var option = Console.ReadLine().ToUpper();
+            Console.WriteLine("Add - Add New Band Information");
+            Console.WriteLine("Information - Band Information");
+            Console.WriteLine("Release - Let A Band Go");
+            Console.WriteLine("Resign - Resign Band");
+            Console.WriteLine("Quit - Close Application");
+            Console.WriteLine();
+            Console.WriteLine("What would you like to do?");
+
+            var addOption = Console.ReadLine().ToLower();
 
             // Add
             // Add a new band
             // Add an album for a band
             // Add a song to an album
 
-            if (option == "ADD")
+            switch (addOption)
             {
-                Console.WriteLine();
-                Console.WriteLine("ADD A NEW BAND");
-                Console.WriteLine("ADD ALBUM TO BAND");
-                Console.WriteLine("ADD SONG TO ALBUM");
-                Console.WriteLine("RETURN TO MENU");
-                Console.WriteLine();
-                Console.WriteLine("What would you like to see?");
-                var option = Console.ReadLine().ToUpper();
+                case "add":
+                    Console.WriteLine();
+                    Console.WriteLine("Select From Given Options");
+                    Console.WriteLine("ADD A NEW BAND");
+                    Console.WriteLine("ADD ALBUM TO BAND");
+                    Console.WriteLine("ADD SONG TO ALBUM");
+                    Console.WriteLine("RETURN TO MENU");
+                    Console.WriteLine();
+                    Console.WriteLine("What would you like to add?");
 
-                if (option == "ADD NEW BAND")
-                {
+                    var addChioce = Console.ReadLine().ToUpper();
+                    switch (addChioce)
 
-                }
+                    {
+                        case "add a new band":
+                            {
 
-                if (option == "ADD ALBUM TO BAND")
-                {
+                            }
+                            break;
 
-                }
-                if (option == "ADD SONG TO ALBUM")
-                {
+                        case "add album to band":
+                            {
 
-                }
-                if (option == "RETURN TO MENU")
-                {
+                            }
+                            break;
 
-                }
+                        case "add song to album":
+                            {
+
+                            }
+                            break;
+
+                        case "return to menu":
+                            {
+
+                            }
+                            break;
+
+
+                        // Band Info
+                        // View all the bands
+                        // Prompt for a band name and view all their albums
+                        // View all albums ordered by ReleaseDate
+                        // View all bands that are signed
+                        // View all bands that are not signed
+
+
+                        case information:
+                            Console.WriteLine();
+                            Console.WriteLine("VIEW BAND AND ALBUMS");
+                            Console.WriteLine("VIEW ALL ALBUMS");
+                            Console.WriteLine("VIEW SIGNED BANDS");
+                            Console.WriteLine("VIEW BANDS NOT SIGNED");
+                            Console.WriteLine("RETURN TO MENU");
+                            Console.WriteLine();
+                            Console.WriteLine("What would you like to see?");
+
+                            var informationOption = Console.ReadLine().ToUpper();
+
+                            switch (informationOption)
+                            {
+                                case "view bands and albums":
+                                    {
+
+                                    }
+                                    break;
+
+                                case "view all albums":
+                                    {
+
+                                    }
+                                    break;
+
+                                case "view signed bands":
+                                    {
+
+                                    }
+                                    break;
+
+                                case "view bands not signed":
+                                    {
+
+                                    }
+                                    break;
+
+                                case "return to menu":
+                                    {
+
+                                    }
+                                    break;
+
+
+
+                                case release:
+                                    Console.WriteLine();
+                                    Console.WriteLine("VIEW BAND AND ALBUMS");
+                                    Console.WriteLine("VIEW ALL ALBUMS");
+                                    Console.WriteLine("VIEW SIGNED BANDS");
+                                    Console.WriteLine("VIEW BANDS NOT SIGNED");
+                                    Console.WriteLine("RETURN TO MENU");
+                                    Console.WriteLine();
+                                    Console.WriteLine("What would you like to see?");
+
+                                    var informationOption = Console.ReadLine().ToUpper();
+
+                                    switch (informationOption)
+                                    {
+                                        case "view bands and albums":
+                                            {
+
+                                            }
+                                            break;
+
+                                    }
+
+
+
+                                    // Delete/Remove Band
+                                    // Let a band go (update isSigned to false)
+                                    if (addOption == "LET GO")
+                                    {
+
+                                    }
+
+
+                                    // Resign a band (update isSigned to true)
+
+                                    if (addOption == "RESIGN")
+                                    {
+                                    }
+
+                                    // Quit the program
+
+                                    if (addOption == "QUIT")
+                                    {
+                                        chooseQuit = true;
+                                    }
+
+                                    Console.WriteLine(addOption);
+
+                                    DisplayMessage("Thank you for stopping in!");
+                            }
+
+                    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
             }
-            // Band Info
-            // View all the bands
-            // Prompt for a band name and view all their albums
-            // View all albums ordered by ReleaseDate
-            // View all bands that are signed
-            // View all bands that are not signed
-
-            if (option == "INFORMATION")
-            {
-                Console.WriteLine();
-                Console.WriteLine("VIEW BAND AND ALBUMS");
-                Console.WriteLine("VIEW ALL ALBUMS");
-                Console.WriteLine("VIEW SIGNED BANDS");
-                Console.WriteLine("VIEW BANDS NOT SIGNED");
-                Console.WriteLine("RETURN TO MENU");
-                Console.WriteLine();
-                Console.WriteLine("What would you like to see?");
-                var option = Console.ReadLine().ToUpper();
-
-                if (option == "VIEW BAND AND ALBUMS")
-                {
-
-                }
-
-                if (option == "VIEW SIGNED BANDS")
-                {
-
-                }
-                if (option == "VIEW BANDS NOT SIGNED")
-                {
-
-                }
-                if (option == "RETURN TO MENU")
-                {
-
-                }
-            }
-
-            // Delete/Remove Band
-            // Let a band go (update isSigned to false)
-            if (option == "LET GO")
-            {
-
-            }
-
-
-            // Resign a band (update isSigned to true)
-
-            if (option == "RESIGN")
-            {
-            }
-
-            // Quit the program
-
-            if (option == "QUIT")
-            {
-                chooseQuit = true;
-            }
-
-            Console.WriteLine(option);
-
-            DisplayMessage("Thank you for stopping in!");
         }
-
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-}
-}
 
