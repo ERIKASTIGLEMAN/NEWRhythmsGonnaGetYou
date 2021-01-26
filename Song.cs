@@ -2,7 +2,7 @@ using System.Collections.Generic;
 
 namespace NEWRhythmsGonnaGetYou
 {
-    class Song
+    public class Song
 
     {
         public string Id { get; set; }
